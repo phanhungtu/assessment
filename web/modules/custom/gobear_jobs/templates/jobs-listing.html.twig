@@ -1,0 +1,19 @@
+
+  <div class="container jobs-listing">
+    {% for job in items %}
+      <div class="row">
+        <div class="col">
+          <h2>{{ job.title }}</h2>
+          <div class="line"><span class="company">{{ job.company }}</span> | <span class="location">{{ job.location }}</span></div>
+          <div class="line">
+            <span class="created_at">{{ job.created_at }}</span> |
+            <span class="position">Position</span>
+          </div>
+          <a class="more-info">More info ></a>
+          <div class="description hidden">{{ job.description|raw }}</div>
+          <span class="type">{{ job.type }}</span>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+

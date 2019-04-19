@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function gobear_jobs_theme() {
+  return [
+    'jobs_listing' => [
+      'template' => 'jobs-listing',
+      'variables' => [
+        'items' => [],
+      ],
+    ],
+  ];
+
+}
+
+function gobear_jobs_form_webform_submission_assessment_form_add_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  $age = !empty(\Drupal::request()->query->get('age')) ? \Drupal::request()->query->get('age') : '';
+  $city = !empty(\Drupal::request()->query->get('city')) ? \Drupal::request()->query->get('city') : '';
+
+  $form['elements']['age']['#default_value'] = $age;
+  $form['elements']['city']['#default_value'] = $city;
+}

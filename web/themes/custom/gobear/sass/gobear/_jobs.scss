@@ -1,0 +1,79 @@
+body {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.region-header {
+  background: url(../images/header.png) left top no-repeat;
+  height: 350px;
+  font-family: 'Varela Round', sans-serif;
+  color: #FFF;
+  font-size: 70px;
+  margin-bottom: 46px;
+
+  .page-header {
+    border-bottom: 0;
+    text-align: center;
+    padding-top: 145px;
+  }
+}
+
+.jobs-listing {
+  .col {
+    font-family: 'Varela Round', sans-serif;
+    border: 1px solid #ececec;
+    margin-bottom: 20px;
+    padding: 20px 40px;
+    color: #999999;
+    position: relative;
+
+    h2 {
+      color:#333333;
+      font-weight: bold;
+      margin: 0;
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+
+    .company {
+      font-family: 'Roboto', sans-serif;
+      color: #7eacf6;
+    }
+
+    .created_at,
+    .location {
+      color: #999999;
+    }
+
+    .position {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .more-info {
+      font-family: 'Roboto', sans-serif;
+      color: #9bbff9;
+      cursor: pointer;
+    }
+
+    .line {
+      margin: 4px 0;
+    }
+
+    .description {
+      margin-top: 10px;
+    }
+
+    .type {
+      color: #FFF;
+      font-family: 'Roboto', sans-serif;
+      position: absolute;
+      right: 40px;
+      top: 40px;
+      background-color: #6db141;
+      padding: 10px 25px;
+      text-transform: uppercase;
+    }
+
+  }
+}

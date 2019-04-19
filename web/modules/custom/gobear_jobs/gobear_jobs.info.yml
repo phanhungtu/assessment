@@ -1,0 +1,9 @@
+name: Gobear jobs
+type: module
+description: 'Display list gobear jobs from API.'
+core: 8.x
+package: The Hub
+
+# Information added by Drupal.org packaging script on 2019-04-19
+version: '8.x-1.x-dev'
+project: 'Gobear'
